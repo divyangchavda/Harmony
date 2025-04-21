@@ -1,6 +1,7 @@
 import React from "react";
-// import "../styles/Performtrack.css";
+
 import "../styles/playlists.css";
+
 function Playlists({ searchPlaylists,setplaylistDetail,setSearchResult ,Albumdetail}) {
     return(
         <div className="playlistss">  

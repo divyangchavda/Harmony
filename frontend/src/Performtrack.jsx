@@ -3,7 +3,7 @@ import "../styles/Performtrack.css";
 import SpotifyWebApi from "spotify-web-api-node";
 import Content from "./Content.jsx";
 import All from "./All.jsx";
-import Playlists from "./playlists.jsx";
+import Playlists from "./Playlists.jsx";
 import Artists from "./Artists.jsx";
 import Albums from "./Albums.jsx";
 import Home from "./Home.jsx";
