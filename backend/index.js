@@ -2,11 +2,16 @@ import express from 'express'
 import SpotifyWebApi from 'spotify-web-api-node'
 import bodyParser from 'body-parser'
 import cors from 'cors'
+import dotenv from 'dotenv'
+dotenv.config();
 const app=new express()
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 app.use(cors({
     origin: 'http://localhost:5173',
 }))
+const clientId=process.env.Client_Id
+const clientSecret=process.env.Client_Secret
+console.log(clientId,clientSecret)
 app.post('/login',(req,res)=>{
     const code=req.body.code
     if(!code){
@@ -14,8 +19,8 @@ app.post('/login',(req,res)=>{
     }
     const spotifyapi=new SpotifyWebApi({
         redirectUri:'http://localhost:5173',
-        clientId:'41718ba145cd477aa62bd5a48e0b6507',
-        clientSecret:'896c21b512f44b6e8692fd8f2a484639'
+        clientId,
+        clientSecret
     })
     spotifyapi.authorizationCodeGrant(code).then(data=>{
         res.json({
@@ -33,8 +38,8 @@ app.post('/refresh',(req,res)=>{
     const refreshToken=req.body.refreshToken
     const spotifyapi=new SpotifyWebApi({
         redirectUri:'http://localhost:5173',
-        clientId:'41718ba145cd477aa62bd5a48e0b6507',
-        clientSecret:'896c21b512f44b6e8692fd8f2a484639',
+        clientId,
+        clientSecret,
         refreshToken
     })
     spotifyapi.refreshAccessToken().then((data)=>{
