@@ -4,9 +4,9 @@ import '../styles/playlistdetail.css';
 
 function Playlistdetail({ playlistDetail,Albumdetail, currAccessToken,settrackdescrip,setIsTrackDiscripVisible,setselectedSong}) {
   const [tracks, setTracks] = useState([]);
-
+  const Client_Id=process.env.Client_Id
   const spotifyApi = new SpotifyWebApi({
-    clientId: '0647e19f61a44c20bf6b505514767f63',
+    Client_Id,
   });
   console.log("playlistDetail in its component",playlistDetail.id);
   useEffect(() => {

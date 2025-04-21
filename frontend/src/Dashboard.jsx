@@ -8,8 +8,9 @@ import Trackdiscrip from "./Trackdiscrip.jsx";
 import Player from "./Player.jsx";
 
 function Dashboard({ code }) {
+    const Client_Id=process.env.Client_Id
     const spotifyApi = new SpotifyWebApi({
-        clientId: "0647e19f61a44c20bf6b505514767f63",
+        Client_Id,
     });
     const [home,setHome]=useState();
     const [currAccessToken, setCurrAccessToken] = useState(null);

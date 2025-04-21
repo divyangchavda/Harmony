@@ -7,7 +7,7 @@ dotenv.config();
 const app=new express()
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: "https://harmony-zga8.onrender.com",
 }))
 const clientId=process.env.Client_Id
 const clientSecret=process.env.Client_Secret
@@ -18,7 +18,7 @@ app.post('/login',(req,res)=>{
         return res.status(404).json({message:"No Authorization code"})
     }
     const spotifyapi=new SpotifyWebApi({
-        redirectUri:'http://localhost:5173',
+        redirectUri:'https://harmony-zga8.onrender.com',
         clientId,
         clientSecret
     })
@@ -37,7 +37,7 @@ app.post('/login',(req,res)=>{
 app.post('/refresh',(req,res)=>{
     const refreshToken=req.body.refreshToken
     const spotifyapi=new SpotifyWebApi({
-        redirectUri:'http://localhost:5173',
+        redirectUri:'https://harmony-zga8.onrender.com',
         clientId,
         clientSecret,
         refreshToken

@@ -9,6 +9,7 @@ function Playlists({ searchPlaylists,setplaylistDetail,setSearchResult ,Albumdet
                 {searchPlaylists && searchPlaylists.length > 0 ? (
                     searchPlaylists.map((album, index) => {                    
                         if (!album) return null;
+                        
                         return (
                             <div className="playlist-single-div-search" key={album.id || index} onClick={() => {setplaylistDetail(album);setSearchResult([]);console.log("album detail",album.id)}}>
                                 <div className="playlist-item-img_search">
