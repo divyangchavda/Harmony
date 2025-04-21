@@ -1,6 +1,6 @@
 
-import React, { useState } from "react";
-import "../styles/Trackdiscrip.css";
+import React from "react";
+import "../styles/trackdiscrip.css";
 
 function Trackdiscrip({ trackdescrip, onClose,AlbumDetailImage }) {
     if (!trackdescrip || trackdescrip.length === 0) {
