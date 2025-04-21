@@ -1,0 +1,31 @@
+.trackhome{
+    display: flex;
+    gap:30px;
+}
+.trackhome img{
+    padding:5px;
+}
+.trackdes{
+    padding:5px;
+}
+.trackname{
+    font-size: 18px;
+    font-family:sans-serif;
+    font-weight: bold;
+    padding:5px;
+}
+.trackartist{
+    font-size: 18px;
+    font-family:sans-serif;
+    font-weight: lighter;
+    padding:5px;
+}
+.trackhome:hover{
+    cursor: pointer;
+}
+.no-preview{
+    font-size: 12px;
+    font-family:sans-serif;
+    font-weight: lighter;
+    padding:5px;
+}

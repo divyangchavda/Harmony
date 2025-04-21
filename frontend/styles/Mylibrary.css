@@ -1,0 +1,87 @@
+.lib-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.lib-div1{
+    display: flex;
+    flex-direction: row;
+    padding-left:5% ;
+}
+.lib-div1 h1{
+    width:75%;
+}
+.lib-div1 button{
+   background: transparent;
+  color: white;
+  border: none;
+  font-weight: 900;
+}
+.lib-div2 button{
+    background-color:#121212;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.lib-div2 button:hover{
+    background-color: #1F1F1F;
+}
+.serch-category{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left:5% ;
+    margin-top: 3%;
+    padding-right: 3%;
+}
+.serch-category button{
+    background-color:transparent;
+    color: white;
+    font-weight: 900;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;   
+} 
+.lists{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll; 
+    
+}
+.lists-item{
+    height: auto;
+    width: 95%;
+    margin:0 2.5%;
+    display: flex;
+    font-weight: 900;
+    flex-direction: row;
+    align-items: center; 
+}
+.lists-item:hover{
+    /* background:linear-gradient(180deg,#121212 36%,white 28%,#121212 36%); */
+    background-color: #1F1F1F;
+    
+    border-radius: 10px;
+   
+}
+.lists-item-img{
+   width: 20%;
+   height:70%; 
+   
+}
+.lists-item-img img{
+    width: 100%;
+    height: 100%;
+    
+}
+.lists-item-details{
+    margin-left: 5%;
+    width: 70%;
+    height:100% ;
+}

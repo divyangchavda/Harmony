@@ -1,0 +1,41 @@
+.song-info{
+    width:300px;
+    height: 100%;
+}
+.song-info::-webkit-scrollbar{display: none;}
+.song-info button  {
+    background-color:#121212;
+    border: none;
+    color: white;
+    margin-left: 80%;
+    margin-bottom: 5%; 
+    margin-top: 3%; 
+    font-size: larger;     
+}
+.song-info img{
+
+    width:240px;
+    margin-top: 100px;
+   margin-left: 10%;
+    height: 240px;
+    background-color: aqua;
+    object-fit: fill;
+    border-radius: 20px;
+}
+.song-descrip{
+    width:240px;
+    margin-left: 10%;
+    height: 40%;
+   background-color: transparent;
+    overflow-y: auto;  
+    
+    
+}
+.song-descrip p{
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+}
+.song-descrip::-webkit-scrollbar {
+    display: none  ;
+}

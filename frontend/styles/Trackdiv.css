@@ -1,0 +1,90 @@
+
+     .track-main {
+        display: flex;
+        flex-direction: row; /* Change to 'row' if you want horizontal alignment */
+        width: 100%;
+        height: 8vh; /* Ensure the parent has a defined height */
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .track-div-1 {
+        width: 29%; /* Adjust as needed */
+        height: 8vh; /* Adjust as needed */
+        background-color: blue; /* Add a background color */
+    }
+    
+    .track-div-2 {
+        width: 42%; /* Adjust as needed */
+        height: 8vh; /* Adjust as needed */
+      
+        display: flex;
+        flex-direction: column;
+    }
+    .track-icon-1{
+       height: 8vh;
+       width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#121212;
+    }
+    .track-icon-1 button{
+        border:none;
+        color:white ;
+        background-color:#121212 ;
+        margin: 4%;
+    }
+    .track-div-3 {
+        width: 29%; /* Adjust as needed */
+        height: 8vh; /* Adjust as needed */
+        background-color: #121212;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    .track-div-3 button{
+        border:none;
+        color:white ;
+        background-color:#121212 ;
+        margin: 4%;
+
+    }
+    
+
+   
+    .track-item{
+        width: 100%;
+       height: 100%;
+       
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #121212;
+       
+        
+       
+    }
+    .track-item-img{
+       width: 20%;
+       height:100%; 
+       
+    }
+    .track-item-img img{
+       
+        height: 100%;
+        
+    }
+    .track-item-details{
+        margin-left: 5%;
+        width: 70%;
+        height:8vh;
+        
+   
+       
+    }
+    /* .track-item-details p{
+        margin: 0;
+        padding: 0;
+    } */
