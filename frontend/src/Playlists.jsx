@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/playlists.css";
+import "../styles/Playlists.css";
 
 function Playlists({ searchPlaylists,setplaylistDetail,setSearchResult ,Albumdetail}) {
     return(
