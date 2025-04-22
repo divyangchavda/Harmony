@@ -8,7 +8,7 @@ import Trackdiscrip from "./Trackdiscrip.jsx";
 import Player from "./Player.jsx";
 
 function Dashboard({ code }) {
-    const Client_Id="3deb2b64a9c04861b3ea982dada2a6c4"
+    const Client_Id="1c25fe1a10d24783afb0875502548b7b"
     console.log("Client_Id",Client_Id);
     const spotifyApi = new SpotifyWebApi({
         clientId:Client_Id,
@@ -37,6 +37,7 @@ function Dashboard({ code }) {
     useEffect(() => {
         if (!search) return setSearchResult([]);
         if (!currAccessToken) return;
+        console.log("Access Token:", currAccessToken);
 
         spotifyApi.setAccessToken(currAccessToken);
 

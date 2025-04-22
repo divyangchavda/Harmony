@@ -5,7 +5,7 @@ import Playlistdetail from "./Playlistdetail";
 function Mylibrary({currAccessToken,setplaylistDetail,settrackdescrip,setIsTrackDiscripVisible,setselectedSong}){
      const [playList,setplayList]=useState();
      const [track,setTracks]=useState([])
-     const Client_Id="3deb2b64a9c04861b3ea982dada2a6c4"
+     const Client_Id="1c25fe1a10d24783afb0875502548b7b"
      const spotifyApi = new SpotifyWebApi({
           clientId:Client_Id,
      })
