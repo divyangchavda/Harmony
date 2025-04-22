@@ -4,6 +4,7 @@ import Dashboard from './Dashboard.jsx';
 
 const App = () => {
     const code = new URLSearchParams(window.location.search).get('code');
+    console.log("code in app.jsx", code);
     return code ? <Dashboard code={code} /> : <Login />;
 };
 

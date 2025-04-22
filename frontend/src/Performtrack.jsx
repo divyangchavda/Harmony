@@ -13,13 +13,13 @@ function Performtrack({home,setSearch,setAlbumDetailImage,setAlbumdetail,Albumde
   const [activeComponent, setactiveComponent] = useState([]);
   const [popularAlbums, setpopularAlbums] = useState([]);
   const [music,setMusic] = useState([]);
-  const Client_Id=process.env.Client_Id
+  const Client_Id="3deb2b64a9c04861b3ea982dada2a6c4"
 
  console.log("Albumdetail in performtrack",Albumdetail);
  console.log("playlistDetail in performtrack",playlistDetail);
   const [mca,setMca]=useState([]);
   const spotifyApi = new SpotifyWebApi({
-    Client_Id,
+    clientId:Client_Id,
   });
   useEffect(() => {
     if (!currAccessToken) return;

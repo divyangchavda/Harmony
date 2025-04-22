@@ -7,7 +7,7 @@ function Auth({ code, setCurrAccessToken }) {
     const [expiresIn, setExpiresIn] = useState();
 
     useEffect(() => {
-        axios.post('https://harmony-zga8.onrender.com/login', { code })
+        axios.post('https://harmony-backend-b2cx.onrender.com/login', { code })
             .then(res => {
                 setAccessToken(res.data.accessToken);
                 setRefreshToken(res.data.refreshToken);
@@ -28,7 +28,7 @@ function Auth({ code, setCurrAccessToken }) {
     useEffect(() => {
         const interval = setInterval(() => {
             if (!refreshToken || !expiresIn) return;
-            axios.post('https://harmony-zga8.onrender.com/refresh', { refreshToken })
+            axios.post('https://harmony-backend-b2cx.onrender.com/refresh', { refreshToken })
                 .then(res => {
                     setAccessToken(res.data.accessToken);
                     setExpiresIn(res.data.expiresIn);
